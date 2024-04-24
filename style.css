@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+
+/* Estilo Geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+    background-image: url(../Portfólio/images/32077.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #00ff08;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.Contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+/* Estilo Cabeçalho */
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header > .interface h1 {
+    color: #dc3545;
+    font-size: 2.5rem;
+}
+
+header > .interface span {
+    color: #fff;
+}
+
+header a{
+    color: #7e7b7b;
+    display: inline-block;
+    transition: .2s;
+    text-decoration: none;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* font modulos */
+.menu-desktop li{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Contato button{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo Topo Site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+    animation: inicializar .7s forwards;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site div h1{
+    font-family: 'Poppins';
+    color: #f7f7f7;
+    font-size: 55px;
+    line-height: 65px;
+}
+
+.topo-do-site div h2.eu{
+    font-family: 'Poppins';
+    color: #f7f7f7;
+    font-size: 25px;
+    line-height: 55px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 35px 0;
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* .Digitando */
+
+.digitando::after{
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .5s infinite;
+}
+
+/* Estilo das Especialidades */
+
+section.especialidades{
+    padding: 185px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+
+.especialidades .especialidades-box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffff76;
+}
+
+.especialidades .especialidades-box i{
+    font-size: 68px;
+    color: #00ff08;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box p{
+    text-align: justify;
+}
+
+/* Estilo Sobre Mim */
+
+section.sobre{
+    padding: 25px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #00ff08;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #00ff08;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+
+
+/* Estilo Portfolio */
+
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1c;
+}
+
+section.portfolio .flex{
+    justify-content: cover;
+    padding: 2.5rem;
+    overflow-x: auto;
+}
+
+section.portfolio .flex::-webkit-scrollbar{
+    width: 0;
+}
+
+.img-port{
+    min-width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 30px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000099;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Estilo RodaPé */
+
+footer{
+    padding: 40px 4%;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+.borda{
+    border-top: 2px solid #00ff08;
+}
+
+footer .line-footer p i{
+    color: #00ff08;
+    font-size: 22px;
+}
+
+
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .logo-footer h2{
+    color: #fff;
+}
+
+/* Estile Modal Portfolio */
+
+.modal{
+    min-width: 500px;
+    height: 500px;
+    background-size: cover;
+    background-color: rebeccapurple;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display: none;
+    animation: animate;
+    animation-duration: 888ms;
+}
+
+.fechar{
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50%;
+    float: right;
+    cursor: pointer;
+}
+
+/* KeyFrames */
+
+@keyframes pisca{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes inicializar{
+    from{
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+@keyframes animate{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
