@@ -324,30 +324,6 @@ footer .logo-footer h2{
     color: #fff;
 }
 
-/* Estile Modal Portfolio */
-
-.modal{
-    min-width: 500px;
-    height: 500px;
-    background-size: cover;
-    background-color: rebeccapurple;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    display: none;
-    animation: animate;
-    animation-duration: 888ms;
-}
-
-.fechar{
-    width: 30px;
-    height: 30px;
-    background-color: #000;
-    border-radius: 50%;
-    float: right;
-    cursor: pointer;
-}
 
 /* KeyFrames */
 
